@@ -3,18 +3,18 @@
 module.config(['$routeProvider',
     function ($routeProvider) {
         $routeProvider.
-                when('/route1', {
+                when('/create', {
                     title: 'Maruti',
                     templateUrl: 'templates/create.html',
                     controller: 'createController'
                 }).
-                when('/route2', {
-                    templateUrl: 'templates/delete.html',
-                    controller: 'deleteController'
+                when('/view', {
+                    templateUrl: 'templates/view.html',
+                    controller: 'viewController'
                 }).
-                 when('/route3/:param', {
-                     templateUrl: 'templates/view.html',
-                     controller: 'viewController'
+                 when('/delete', {
+                     templateUrl: 'templates/delete.html',
+                     controller: 'deleteController'
                  }).
                 when('/route4', {
                     templateUrl: 'templates/mypage.html'

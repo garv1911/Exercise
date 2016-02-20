@@ -4,13 +4,13 @@
     console.log($route.current.title);
 
 });
-module.controller("deleteController", function ($scope) {
+module.controller("viewController", function ($scope) {
     $scope.clickCounter = 0;
     $scope.check = function () {
         $scope.clickCounter++;
     };
 });
-module.controller("viewController", function ($scope, $filter, $routeParams) {
+module.controller("deleteController", function ($scope, $filter, $routeParams) {
     $scope.param = $routeParams.param;
     $scope.cars = [
        { carId: 001, carName: 'Santro' },

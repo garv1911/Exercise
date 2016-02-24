@@ -1,0 +1,21 @@
+﻿<div>
+    <h1>Delete Page- coming from my custom delete directive</h1>
+
+    <p>{{ message }}</p>
+    <table>
+        <thead>
+            <tr>
+                <th>Firstname</th>
+                <th>Lastname</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="employee in employees">
+                <td>{{employee.fn}}</td>
+                <td>{{employee.ln}}</td>
+                <td><input type="checkbox" ng-model="employee.selected" name="deleteItem" /></td>
+            </tr>
+        </tbody>
+    </table>
+    <input type="button" name="deleteItem" value="Delete" ng-click="deleteItem($index)">
+</div>

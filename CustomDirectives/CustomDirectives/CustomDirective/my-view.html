@@ -1,0 +1,20 @@
+﻿<div>
+    <h1>View Page - coming from my custom directive</h1>
+
+    <p>{{ message }}</p>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Firstname</th>
+                <th>Lastname</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="employee in employees">
+                <td>{{employee.fn}}</td>
+                <td>{{employee.ln}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,41 @@
+﻿<html ng-app="routingApp">
+
+<head>
+    <script src="angular.js"></script>
+    <script src="angular-route.js"></script>
+    <script src="script.js"></script>
+    <style>
+        table,th,tr,td{
+            border:1px solid black;
+        }
+    </style>
+</head>
+
+<!-- define angular controller -->
+
+<body ng-controller="MainController">
+    <ul>
+        <li>
+            <a href="#/view">
+                View
+            </a>
+        </li>
+        <li>
+            <a href="#/create">
+                Create
+            </a>
+        </li>
+        <li>
+            <a href="#/delete">
+                Delete
+            </a>
+        </li>
+    </ul>
+    <div>
+        <!-- angular templating -->
+        <!-- this is where content will be injected -->
+        <div ng-view></div>
+    </div>
+</body>
+
+</html>
